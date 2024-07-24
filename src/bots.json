@@ -1,0 +1,63 @@
+{
+  "bots": [
+    {
+      "name": "Johnny Gravier",
+      "key": "johnny",
+      "commands": {
+        "hello": {
+          "responseField": "Bonjour",
+          "type": "string"
+        },
+        "meteo": {
+          "type": "api",
+          "url": "https://api.weatherapi.com/v1/current.json?key=62d7ec53c5f0420fad774517242407&q=Morzine",
+          "responseField": "location.name",
+          "responseField2": "current.condition.icon"
+        },
+        "help": {
+          "responseField": "Les commandes disponibles sont: hello, meteo, help",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "name": "Jack Russel",
+      "key": "jack",
+      "commands": {
+        "hello": {
+          "responseField": "Yo !",
+          "type": "string"
+        },
+        "news": {
+          "type": "api",
+          "url": "https://newsapi.org/v2/top-headlines?country=fr&apiKey=YOUR_API_KEY",
+          "responseField": "articles[0].title"
+        },
+        "help": {
+          "responseField": "Les commandes disponibles sont: hello, news, help",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "name": "Maggy Bole",
+      "key": "mag",
+      "commands": {
+        "hello": {
+          "responseField": "Hello",
+          "type": "string"
+        },
+        "joke": {
+          "type": "api",
+          "url": "https://blague-api.vercel.app/api?mode=global",
+          "responseField": "blague",
+          "responseField2": "reponse"
+        },
+        "help": {
+          "responseField": "Les commandes disponibles sont: hello, joke, help",
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

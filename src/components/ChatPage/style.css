@@ -1,0 +1,31 @@
+.textright {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.textleft {
+  text-align: right;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.textleftmeta {
+  flex-direction: row-reverse !important;
+}
+
+.textleftmetavatar {
+  margin-inline-end: 0;
+  margin-inline-start: 16px;
+}
+
+
+.ant-list-item-meta-title {
+  text-align: inherit;
+  /* Inherit alignment from parent */
+}
+
+.ant-list-item-meta-description {
+  text-align: inherit;
+  /* Inherit alignment from parent */
+}
